@@ -7,8 +7,16 @@
 > The goal here isn’t to create a super‑powerful agent that racks up a huge token bill. (I’m broke!)  
 > Instead, I want to see how much good work a small, local AI model can actually do.***
 
+## **Sandbox Playaround**
+* **Folder `sandbox_playground` in the playground region where my agent can operate right now. Its basically, the folder in which the Agent can create/delete files/folders. Read and write files.**
+* **Right now I want the agent to be only do 1 thing. In the specified folder, just be able to perform CRUD operations on files & folders.**
 
 ___________________________
 
 ## **NOTES:**
 * **On my system, I find ollama to behave slower when using `ollama.Chat`, that's why I'm using `ollama.generate()` function in some concatenation tricks to behave it like an agent.**
+
+<details>
+  <summary>Things Bugging me [Currently]</summary>
+-   When suggesting reference links for doing further research, the model should be able to do `internet-tool search`.
+</details>

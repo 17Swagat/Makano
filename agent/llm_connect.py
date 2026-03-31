@@ -35,7 +35,7 @@ system_prompt = importlib.resources.read_text(PACKAGE_NAME, "prompt.md")
 #     system_prompt = system_prompt_file.read()
 
 
-def interface():
+def cli_interface():
     print("<Makano Agent>")
     print("How can I help you?")
     print("Use /help to view available commands.")
