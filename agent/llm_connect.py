@@ -43,7 +43,7 @@ def interface():
         prompt_user = input("[User]> ")
         if prompt_user.strip() == "":
             continue
-        if prompt_user.strip() == "/exit":
+        elif prompt_user.strip() == "/exit":
             print("Bye :)")
             break
         elif prompt_user.strip() == "/help":
