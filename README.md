@@ -14,7 +14,8 @@
 ___________________________
 
 ## **NOTES:**
-* **On my system, I find ollama to behave slower when using `ollama.Chat`, that's why I'm using `ollama.generate()` function in some concatenation tricks to behave it like an agent.**
+- **On my system, I find ollama to behave slower when using `ollama.Chat`, that's why I'm using `ollama.generate()` function in some concatenation tricks to behave it like an agent.**
+- **`Hope for some changes`: Recently downloaded `qwen3.5:4b model` on my system and tried using ollama.chat, did not got any sort of visible delay. Maybe I was using qwen3.5:latest model with was larger in size, maybe due to that the loading time was slow. Not sure tbh, let's experiment with `ollama.chat` as it provides some additional benefits.**
 
 <details>
   <summary>Things Bugging me [Currently]</summary>

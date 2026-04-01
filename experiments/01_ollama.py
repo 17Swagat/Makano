@@ -3,6 +3,36 @@
 # !curl http://localhost:11434/api/generate -d '{  \"model\": \"qwen3.5:2b\",  \"prompt\": \"What color is the sky at different times of the day? Respond using JSON\",  \"format\": \"json\",}'
 
 # %%
+# Using
+# ollama.chat:=>
+import ollama
+
+stream = ollama.chat(
+    model="qwen3.5:4b",
+    messages=[{"role": "user", "content": "What is the chemical formula of sodium dioxide"}],
+    stream=True,
+    think=False
+)
+
+for chunk in stream:
+    print(chunk["message"]["content"], end="", flush=True)
+
+# %%
+# Using
+# ollama.generate :=>
+
+stream = ollama.generate(
+    model="qwen3.5:4b",
+    prompt="why sky is blue?",
+    # format=format,
+    stream=True,
+    think=False,
+)
+
+for chunk in stream:
+    print(chunk["response"], end="", flush=True)  
+
+# %%
 import ollama
 
 stream = ollama.generate(
